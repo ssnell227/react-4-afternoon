@@ -27,6 +27,8 @@ export default class ClassList extends Component {
         <h1>{this.props.match.params.class}</h1>
         <h2>ClassList:</h2>
         {studentsMap}
+        <button onClick={() => this.props.history.goBack()} className='btn'>Back</button>
+
       </div>
     )
   }
